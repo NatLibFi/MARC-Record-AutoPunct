@@ -1,0 +1,29 @@
+Add semicolons between multiple instances of c
+
+110 12 _aMatti Meikäläinen
+       _csub1
+       _csub2
+
+110 12 _aMatti Meikäläinen,
+       _csub1 ;
+       _csub2.
+
+
+There should be a period between a and b
+
+110 12 _aMatti Meikäläinen
+       _bsub1.
+
+110 12 _aMatti Meikäläinen.
+       _bsub1.
+
+
+#There should be a colon between d and c
+
+110 12 _aMatti Meikäläinen
+       _dsub1
+       _csub2
+
+110 12 _aMatti Meikäläinen.
+       _dsub1 :
+       _csub2.

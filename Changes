@@ -1,0 +1,8 @@
+Revision history for Perl extension MARC::Record::AutoPunct.
+
+0.01  Fri Sep 26 12:57:55 2014
+	- original version; created by h2xs 1.23 with options
+		-AXc -n MARC::Record::AutoPunct -b 5.8.8
+
+
+See version control history.

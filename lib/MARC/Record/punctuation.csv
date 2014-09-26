@@ -1,0 +1,67 @@
+"Fields","Name portion","Description","portion","preceding_punct","exceptions / seen examples"
+"X00","$a "," Personal name (NR)","N","none",
+"X10","$a "," Corporate name or jurisdiction name as entry element (NR)","N","none",
+"X11","$a "," Meeting name or jurisdiction name as entry element (NR)","N","none",
+"X00","$b "," Numeration (NR)","N","none",
+"X10","$b "," Subordinate unit (R)","N","period",
+"X00","$c "," Titles and words associated with a name (R)","N","comma",
+"X(10|11)","$c "," Location of meeting (R)","N","comma","- colon if preceded by $d
+- semicolon if preceded by $c"
+"X00","$d ","Dates associated with a name (NR)","N","comma","- colon if preceded by $n"
+"X11","$d ","Date of meeting (NR)","N",,
+"X(00|10)","$e ","Relator term (R)","N","cond_comma",
+"X11","$e ","Subordinate unit (R)","N","period",
+"X11","$j "," Relator term (R)","N","comma",
+"X00","$j "," Attribution qualifier (R)","N","comma",
+"X00","$q "," Fuller form of name (NR)","N","comma",
+"X11","$q ","Name of meeting following jurisdiction name entry element (NR)","N",,
+"X(00|11)","$u "," Affiliation (NR)","N","period","?"
+"X10","$u "," Affiliation (NR) or Address","N","period","- period, if address"
+,,,,,
+,"Control subfields for name portion",,,,
+"X(00|10|11)","$4 "," Relator code (R)","NC","none",
+,,,,,
+,"Title portion",,,,
+"X00, X10","$f "," Date of a work (NR)","T","period",
+"[678][01]0","$h "," Medium (NR)   [600/700/800]","T","period",
+"7[01]0","$i "," Relationship information [700] (R)","T","none",
+"X[01]0","$k "," Form subheading (R)","T","period",
+"X[01]0","$l "," Language of a work (NR)","T","comma / period","- Finnish MARC21 comma,
+- MARC21 period"
+"[678][01]0","$m "," Medium of performance for music (R)   [600/700/800]","T","comma",
+"X00","$n "," Number of part/section of a work (R)","T","comma, period"," - depends on data?
+- period, if preceded by $k, $m, $t
+- comma, if preceded by $b, $m"
+"[678][10]0","$o "," Arranged statement for music (NR)   [600/700/800]","T","semicolon",
+"X[01]0","$p "," Name of part/section of a work (R)","T","comma, period, none","- depends on data?
+- period if preceded by $t, $n, $p
+- comma, if preceded by $n
+- none, if preceded by $k"
+"[678][01]0","$r "," Key for music (NR)   [600/700/800]","T","comma",
+"[678]([01]0|11)","$s "," Version (NR)   [600/700/800]","T","period",
+"X[01]0","$t "," Title of a work (NR)","T","none","- usually first in section -> period"
+"8([01]0|11)","$v "," Volume/sequential designation (NR)   [800]","T","semicolon",
+"[78]([01]0|11)","$x "," International Standard Serial Number (NR)   [700/800]","T","period",
+,,,,,
+,"Name and title portions",,,,
+"X10","$d "," Date of meeting or treaty signing (R)","NT",,
+"X[10]0","$g "," Miscellaneous information (NR)","NT","comma"," - colon, if preceded by $d"
+"X10","$g "," Miscellaneous information (NR), other party to treaties.","NT","comma"," - colon, if preceded by $d
+- period, if preceded by $t"
+"X1[11]","$n "," Number of part/section/meeting (R)","NT",,
+,,,,,
+,"Subject subdivision portion",,,,
+"6([01]0|11)","$v "," Form subdivision (R)   [600]","S","none",
+"6([01]0|11)","$x "," General subdivision (R)   [600]","S","none",
+"6([01]0|11)","$y "," Chronological subdivision (R)   [600]","S","none",
+"6([01]0|11)","$z "," Geographic subdivision (R)   [600]","S","none",
+,,,,,
+,"Control subfields for whole field",,,,
+"8[01]0","$w "," Bibliographic record control number (R)   [800]","cf","none",
+"X[01]0","$0 "," Authority record control number (R)","cf","none",
+"6[01]0","$2 "," Source of heading or term (NR)   [600]","cf","none",
+"[678][01]0","$3 "," Materials specified (NR)   [600/700/800]","cf","none",
+"[78][01]0","$5 "," Institution to which field applies (NR)   [700/800]","cf","none",
+"X[01]0","$6 "," Linkage (NR)","cf","none",
+"8[01]0","$7 "," Control subfield (NR)   [800]","cf","none",
+"X00","$8 "," Field link and sequence number (R)","cf","none",

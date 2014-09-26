@@ -1,0 +1,85 @@
+Don't add period between 100a and 100b
+
+100 12 _aMatti Meikäläinen
+       _bb-osakentt
+
+100 12 _aMatti Meikäläinen
+       _bb-osakentt.
+
+
+Add a comma between 100a and 100c
+
+100 12 _aMatti Meikäläinen
+       _cb-osakentt
+
+100 12 _aMatti Meikäläinen,
+       _cb-osakentt.
+
+
+Add a comma between 100c and 100e
+
+100 12 _aMatti Meikäläinen
+       _csub1
+       _esub2
+
+100 12 _aMatti Meikäläinen,
+       _csub1,
+       _esub2.
+
+
+Don't add a comma between a and c if there is already a period
+
+100 12 _aMatti Meikäläinen.
+       _csub1
+
+100 12 _aMatti Meikäläinen.
+       _csub1.
+
+
+Add commas between multiple instances of c
+
+100 12 _aMatti Meikäläinen
+       _csub1
+       _csub2
+
+100 12 _aMatti Meikäläinen,
+       _csub1,
+       _csub2.
+
+
+Should not add comma after a if there is a comma already
+
+100 12 _aMatti Meikäläinen,
+       _csub1
+       _csub2
+
+100 12 _aMatti Meikäläinen,
+       _csub1,
+       _csub2.
+
+
+Should not add comma before e of there is a hyphen
+
+100 12 _aMatti Meikäläinen-
+       _esub1.
+
+100 12 _aMatti Meikäläinen-
+       _esub1.
+
+
+Should add a comma before e of there is no hyphen
+
+100 12 _aMatti Meikäläinen
+       _esub1.
+
+100 12 _aMatti Meikäläinen,
+       _esub1.
+
+
+Should add a period in the end of the field
+
+100 12 _aMatti Meikäläinen,
+       _esäveltäjä
+
+100 12 _aMatti Meikäläinen,
+       _esäveltäjä.

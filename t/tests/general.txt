@@ -1,0 +1,22 @@
+Just a general test to test the framework
+
+100 12 _aMatti Meikäläinen
+       _bb-osakentt
+       _khöyry
+       _pding
+       _8controllia
+
+100 12 _aMatti Meikäläinen
+       _bb-osakentt.
+       _khöyry
+       _pding.
+       _8controllia
+
+
+Test that subfield 4 is handled as controlfield
+
+100 12 _aMatti Meikäläinen
+       _4dir
+
+100 12 _aMatti Meikäläinen.
+       _4dir

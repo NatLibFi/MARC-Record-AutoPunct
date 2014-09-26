@@ -1,0 +1,29 @@
+MARC-Record-AutoPunct version 0.01
+==================================
+
+Automatically tries to add some punctuations to marc records.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  MARC::Record
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2014 by petuomin
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.18.2 or,
+at your option, any later version of Perl 5 you may have available.
+
+

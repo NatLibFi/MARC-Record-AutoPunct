@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/MARC-Record-AutoPunct.t
+lib/MARC/Record/AutoPunct.pm
+lib/MARC/Record/punctuation.csv
