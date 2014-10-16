@@ -18,6 +18,15 @@ This module requires these other modules and libraries:
 
   MARC::Record
 
+BUGS
+
+  Any bugs should be reported to this github projet:
+  https://github.com/NatLibFi/MARC-Record-AutoPunct
+
+AUTHOR
+
+  Pasi Tuominen <pasi.e.tuominen@helsinki.fi>
+
 COPYRIGHT AND LICENCE
 
 Copyright (C) 2014 by The National Library of Finland
