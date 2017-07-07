@@ -22,9 +22,9 @@
 "X(00|10|11)","$4 "," Relator code (R)","NC","none",
 ,,,,,
 ,"Title portion",,,,
-"X00, X10","$f "," Date of a work (NR)","T","period",
+"X(00|10)","$f "," Date of a work (NR)","T","period",
 "[678][01]0","$h "," Medium (NR)   [600/700/800]","T","period",
-"7[01]0","$i "," Relationship information [700] (R)","T","none",
+"7[01]0","$i "," Relationship information [700] (R)","cf","none",
 "X[01]0","$k "," Form subheading (R)","T","period",
 "X[01]0","$l "," Language of a work (NR)","T","comma / period","- Finnish MARC21 comma,
 - MARC21 period"
@@ -39,7 +39,7 @@
 - none, if preceded by $k"
 "[678][01]0","$r "," Key for music (NR)   [600/700/800]","T","comma",
 "[678]([01]0|11)","$s "," Version (NR)   [600/700/800]","T","period",
-"X[01]0","$t "," Title of a work (NR)","T","none","- usually first in section -> period"
+"X(00|10|11)","$t "," Title of a work (NR)","T","none","- usually first in section -> period"
 "8([01]0|11)","$v "," Volume/sequential designation (NR)   [800]","T","semicolon",
 "[78]([01]0|11)","$x "," International Standard Serial Number (NR)   [700/800]","T","period",
 ,,,,,
@@ -48,7 +48,7 @@
 "X[10]0","$g "," Miscellaneous information (NR)","NT","comma"," - colon, if preceded by $d"
 "X10","$g "," Miscellaneous information (NR), other party to treaties.","NT","comma"," - colon, if preceded by $d
 - period, if preceded by $t"
-"X1[11]","$n "," Number of part/section/meeting (R)","NT",,
+"X1[01]","$n "," Number of part/section/meeting (R)","NT",,
 ,,,,,
 ,"Subject subdivision portion",,,,
 "6([01]0|11)","$v "," Form subdivision (R)   [600]","S","none",
@@ -65,3 +65,5 @@
 "X[01]0","$6 "," Linkage (NR)","cf","none",
 "8[01]0","$7 "," Control subfield (NR)   [800]","cf","none",
 "X00","$8 "," Field link and sequence number (R)","cf","none",
+"X(00|10|11)","$9","Local control subfield","cf","none",
+"X(00|10|11)","$0","Link control subfield","cf","none",

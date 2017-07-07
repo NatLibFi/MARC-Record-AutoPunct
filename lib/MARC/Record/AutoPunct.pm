@@ -44,6 +44,8 @@ sub punctuateField {
 	my @subfields = $field->subfields();
 	my $currPortion;
 	my $precedingField;
+	my $inNamePortion = 1;
+
 	for my $subfield (@subfields) {
 		d("Handling subfield " . $subfield->[0]);
 		my $portion = getPortion($subfield, \@rules);
@@ -51,6 +53,18 @@ sub punctuateField {
 
 		if ($portion eq 'CF' || $portion eq 'NC') {
 			next;
+		}
+
+		if ($inNamePortion && ($portion eq 'T' || $portion eq 'S')) { 
+			d("Portion changed to $portion. Not in name portion anymore");
+			$inNamePortion = 0;
+		}
+
+		if ($inNamePortion && $portion eq 'NT') {
+			$portion = 'N';
+		} 
+		if (!$inNamePortion && $portion eq 'NT') {
+			$portion = 'T';
 		}
 
 		if (defined($currPortion)) { 
